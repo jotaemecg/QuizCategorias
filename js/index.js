@@ -1,3 +1,5 @@
+
+
 //tomo los elementos del html
 const nombre = document.querySelector("#nombre");
 const btnComenzar = document.querySelector("#comenzar");
