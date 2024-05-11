@@ -67,7 +67,7 @@ function agregarEventListenerBoton(e) {
     //Controlo si la respuesta es correcta
     if (e.currentTarget.id === preguntasCategoria[numPreguntaActual].correcta) {
         e.currentTarget.classList.add("correcta");
-        puntajeTotal = puntajeTotal + 100;
+        puntajeTotal = puntajeTotal + 1;
         txtPuntaje.innerHTML = puntajeTotal;
         localStorage.setItem("puntaje-total", puntajeTotal);
         txtPuntaje.classList.add("efecto");

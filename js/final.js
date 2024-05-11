@@ -9,14 +9,14 @@ const btnComenar = document.querySelector("#btn-comenzar")
 nombre.innerHTML = localStorage.getItem("nombre");
 nombreJugador.innerHTML = localStorage.getItem("nombre");
 txtPuntaje.innerHTML = parseInt(localStorage.getItem("puntaje-total"));
-puntajeFinal.innerHTML = parseInt(localStorage.getItem("puntaje-total")) + " Puntos";
+puntajeFinal.innerHTML =parseInt(localStorage.getItem("puntaje-total")) + "% menos en tu factura de Netflix";
 
-const correctas = parseInt(localStorage.getItem("puntaje-total"))/100;
+const correctas = parseInt(localStorage.getItem("puntaje-total"))/1;
 const incorrectas = 30 - correctas;
 totalAcertadas.innerHTML = correctas;
 totalNoAcertadas.innerHTML = incorrectas;
 
-btnComenar.addEventListener("click", () => {
+btnComenzar.addEventListener("click", () => {
     location.href = "index.html";
 });
 
